@@ -45,3 +45,7 @@ ul {
 li {
   margin: 0.5em auto;
 }
+
+li img {
+  margin: auto;
+}

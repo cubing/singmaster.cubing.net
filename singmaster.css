@@ -1,0 +1,39 @@
+html {
+  font-family: -apple-system, Roboto, Ubuntu, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  padding: 2em;
+  display: grid;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  max-width: 40em;
+  display: grid;
+  place-content: center;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #000D;
+    color: #EEE;
+  }
+
+  a {
+    color: #669df5;
+  }
+
+  a:visited {
+    color: #af73d5;
+  }
+}
+
+h1 {
+  margin-top: -3em;
+  padding: 0.5em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  color: white;
+}

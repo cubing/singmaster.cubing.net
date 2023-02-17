@@ -120,6 +120,15 @@ li img {
   background-color: rgba(var(--text-color), 0.1);
 }
 
+iframe.youtube {
+  aspect-ratio: 16 / 9;
+  width: min(100%, 70vh);
+}
+
+div:has(.youtube) {
+  text-align: center;
+}
+
 .large {
   font-size: 2em;
   line-height: 0.5em;

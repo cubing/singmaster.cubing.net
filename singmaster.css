@@ -88,3 +88,17 @@ li img {
     grid-template-columns: 1fr;
   }
 }
+
+:target {
+  animation: initial-highlight 2s forwards;
+}
+
+@keyframes initial-highlight {
+  from {
+    background-color: rgba(var(--text-color), 0.2);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}

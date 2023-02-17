@@ -65,7 +65,7 @@ h2>a:hover::before {
 
 section {
   margin: 0 -1em;
-  padding: 0 1em;
+  padding: 0 1em 1em;
 }
 
 ul {

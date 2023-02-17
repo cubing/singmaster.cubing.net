@@ -50,8 +50,14 @@ h2>a:not(:hover) {
   text-decoration: none;
 }
 
-h2>a:not(:hover) .link-icon {
+h2:has(a:not(:hover)) .link-icon {
   visibility: hidden;
+}
+
+.link-icon {
+  float: left;
+  width: 0;
+  transform: translateX(-1.5em);
 }
 
 section {

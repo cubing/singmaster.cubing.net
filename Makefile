@@ -1,3 +1,7 @@
+.PHONY: 512w
+512w:
+	script/512w.fish
+
 SFTP_PATH = "towns.dreamhost.com:~/singmaster.cubing.net/"
 URL       = "https://singmaster.cubing.net/"
 

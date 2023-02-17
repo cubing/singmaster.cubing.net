@@ -119,3 +119,17 @@ li img {
 :target {
   background-color: rgba(var(--text-color), 0.1);
 }
+
+.large {
+  font-size: 2em;
+  line-height: 0.5em;
+  vertical-align: -0.3em;
+}
+
+.large:first-child {
+  margin-right: 0.1em;
+}
+
+.large:last-child {
+  vertical-align: -0.35em;
+}

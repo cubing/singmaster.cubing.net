@@ -41,6 +41,14 @@ h1 {
   color: white;
 }
 
+h2 {
+  text-align: center;
+}
+
+h2>a {
+  position: relative;
+}
+
 h2>a,
 h2>a:visited {
   color: rgba(var(--text-color), 1);
@@ -52,8 +60,7 @@ h2>a:not(:hover) {
 
 h2>a:hover::before {
   content: "🔗";
-  float: left;
-  width: 0;
+  position: absolute;
   transform: translateX(-1.25em);
 }
 
@@ -83,7 +90,7 @@ li img {
 .box {
   border: 1px solid rgba(var(--text-color), 0.3);
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2, auto);
   overflow: hidden;
   margin: 0.5em;
 }
@@ -93,17 +100,13 @@ li img {
   place-content: center;
 }
 
-.box>div {
-  margin: 1em;
-}
-
 .box.no-image {
   grid-template-columns: 1fr;
   font-style: italic;
 }
 
-.box.no-image>div {
-  margin: 0 1em;
+.box p {
+  margin: 1em;
 }
 
 @media (max-width: 40em) {

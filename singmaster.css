@@ -70,6 +70,15 @@ li img {
   margin: 1em;
 }
 
+.box.no-image {
+  grid-template-columns: 1fr;
+  font-style: italic;
+}
+
+.box.no-image>div {
+  margin: 0 1em;
+}
+
 @media (max-width: 40em) {
   .box>a {
     margin-top: 1em;

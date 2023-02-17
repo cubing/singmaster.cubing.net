@@ -53,7 +53,7 @@ li img {
   margin: auto;
 }
 
-.publication {
+.box {
   border: 1px solid rgba(var(--text-color), 0.3);
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -61,21 +61,21 @@ li img {
   margin: 0.5em;
 }
 
-.publication>a {
+.box>a {
   display: grid;
   place-content: center;
 }
 
-.publication>div {
+.box>div {
   margin: 1em;
 }
 
 @media (max-width: 40em) {
-  .publication>a {
+  .box>a {
     margin-top: 1em;
   }
 
-  .publication {
+  .box {
     grid-template-columns: 1fr;
   }
 }

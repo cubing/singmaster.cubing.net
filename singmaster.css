@@ -4,6 +4,9 @@ html {
   padding: 2em;
   display: grid;
   justify-content: center;
+
+  --text-color: 0, 0, 0;
+  color: rgb(var(--text-color));
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 @media (prefers-color-scheme: dark) {
   html {
     background: #000D;
-    color: #EEE;
+    --text-color: 238, 238, 238;
   }
 
   a {
@@ -48,4 +51,31 @@ li {
 
 li img {
   margin: auto;
+}
+
+.publication {
+  border: 1px solid rgba(var(--text-color), 0.3);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  overflow: hidden;
+  margin: 0.5em;
+}
+
+.publication>a {
+  display: grid;
+  place-content: center;
+}
+
+.publication>div {
+  margin: 1em;
+}
+
+@media (max-width: 40em) {
+  .publication>a {
+    margin-top: 1em;
+  }
+
+  .publication {
+    grid-template-columns: 1fr;
+  }
 }

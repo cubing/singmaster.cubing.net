@@ -41,6 +41,24 @@ h1 {
   color: white;
 }
 
+h2>a,
+h2>a:visited {
+  color: rgba(var(--text-color), 1);
+}
+
+h2>a:not(:hover) {
+  text-decoration: none;
+}
+
+h2>a:not(:hover) .link-icon {
+  visibility: hidden;
+}
+
+section {
+  margin: 0 -1em;
+  padding: 0 1em;
+}
+
 ul {
   margin-block: 0;
 }

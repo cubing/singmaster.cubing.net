@@ -50,8 +50,11 @@ h2>a:not(:hover) {
   text-decoration: none;
 }
 
-h2:has(a:not(:hover)) .link-icon {
-  visibility: hidden;
+h2>a:hover::before {
+  content: "🔗";
+  float: left;
+  width: 0;
+  transform: translateX(-1.25em);
 }
 
 .link-icon {
@@ -114,15 +117,5 @@ li img {
 }
 
 :target {
-  animation: initial-highlight 2s forwards;
-}
-
-@keyframes initial-highlight {
-  from {
-    background-color: rgba(var(--text-color), 0.2);
-  }
-
-  to {
-    background-color: transparent;
-  }
+  background-color: rgba(var(--text-color), 0.1);
 }

@@ -2,8 +2,9 @@
 512w:
 	script/512w.fish
 
-SFTP_PATH = "towns.dreamhost.com:~/singmaster.cubing.net/"
-URL       = "https://singmaster.cubing.net/"
+DOMAIN    = singmaster.cubing.net
+SFTP_PATH = towns.dreamhost.com:~/${DOMAIN}/
+URL       = https://${DOMAIN}/
 
 .PHONY: deploy
 deploy:
@@ -11,5 +12,9 @@ deploy:
 		--exclude .DS_Store \
 		--exclude .git \
 		./ \
-		${SFTP_PATH}
+		"${SFTP_PATH}"
 	echo "\nDone deploying. Go to ${URL}\n"
+
+.PHONY: open
+open:
+	open "${URL}"
